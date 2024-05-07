@@ -1,39 +1,34 @@
-# loader
+# 这是一个 vue3 的加载动画
 
-This template should help get you started developing with Vue 3 in Vite.
+#### 下载
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```bash
+pnpm add m78-loader
 ```
 
-### Compile and Hot-Reload for Development
+#### 引入
 
-```sh
-npm run dev
+main.ts
+
+```ts
+// 引入样式
+import 'm78-loader/loader.css';
 ```
 
-### Type-Check, Compile and Minify for Production
+#### 使用
 
-```sh
-npm run build
+test.vue
+
+```ts
+<script lang="ts" setup>
+import { loader } from 'm78-loader';
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+```html
+<template>
+    <!-- h 是高度 （默认50vh） -->
+    <!-- vertical 加载动画竖向 （默认横向） -->
+    <!-- test 测试模式，会在加载动画的边界加上红色边框（默认正常模式） -->
+    <loader h="calc(100vh - 80px)" vertical></loader
+></template>
 ```

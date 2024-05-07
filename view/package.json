@@ -1,6 +1,6 @@
 {
-    "name": "loader-pcc",
-    "version": "1.0.1",
+    "name": "m78-loader",
+    "version": "1.0.3",
     "private": false,
     "main": "dist/loader.umd.cjs",
     "module": "dist/loader.js",

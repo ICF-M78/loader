@@ -5,7 +5,7 @@
 </template>
 <script lang="ts" setup>
 import { onMounted } from 'vue';
-import { loader } from 'loader-pcc';
+import { loader } from 'loader-wjt';
 import 'loader-pcc/loader.css';
 
 const rfsPage = () => {};
