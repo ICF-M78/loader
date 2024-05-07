@@ -1,6 +1,6 @@
 {
-    "name": "loader-wjt",
-    "version": "1.0.3",
+    "name": "loader-pcc",
+    "version": "1.0.1",
     "private": false,
     "main": "dist/loader.umd.cjs",
     "module": "dist/loader.js",
@@ -36,7 +36,6 @@
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
     },
     "dependencies": {
-        "loader-wjt": "^1.0.3",
         "pinia": "^2.1.7",
         "sass": "^1.76.0",
         "vue": "^3.4.26",
